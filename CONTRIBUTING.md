@@ -16,18 +16,12 @@ it, please check out our ["Developing Ghostty"](HACKING.md) document as well.
 ## The Critical Rule
 
 **The most important rule: you must understand your code.** If you can't
-explain what your changes do and how they interact with the greater system
-without the aid of AI tools, do not contribute to this project.
+explain what your changes do and how they interact with the greater system,
+do not submit them.
 
 Using AI to write code is fine. You can gain understanding by interrogating an
 agent with access to the codebase until you grasp all edge cases and effects
-of your changes. What's not fine is submitting agent-generated slop without
-that understanding. Be sure to read the [AI Usage Policy](AI_POLICY.md).
-
-## AI Usage
-
-The Ghostty project has strict rules for AI usage. Please see
-the [AI Usage Policy](AI_POLICY.md). **This is very important.**
+of your changes.
 
 ## First-Time Contributors
 
@@ -37,15 +31,11 @@ We use a vouch system for first-time contributors:
    [discussion in the "Vouch Request"](https://github.com/ghostty-org/ghostty/discussions/new?category=vouch-request)
    category describing what you want to change and why. Follow the template.
 2. Keep it concise
-3. Write in your own voice, don't have an AI write this
-4. A maintainer will comment `!vouch` if approved
-5. Once approved, you can submit PRs
+3. A maintainer will comment `!vouch` if approved
+4. Once approved, you can submit PRs
 
 If you aren't vouched, any pull requests you open will be
-automatically closed. This system exists because open source works
-on a system of trust, and AI has unfortunately made it so we can no
-longer trust-by-default because it makes it too trivial to generate
-plausible-looking but actually low-quality contributions.
+automatically closed.
 
 ## Contributors Prior to the Vouch System
 
