@@ -1,27 +1,45 @@
-<!-- LOGO -->
-<h1>
+<h1 align="center">Specterminal</h1>
+
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/fe853809-ba8b-400b-83ab-a9a0da25be8a" alt="Logo" width="128">
-  <br>Ghostty
-</h1>
-  <p align="center">
-    Fast, native, feature-rich terminal emulator pushing modern features.
-    <br />
-    A native GUI or embeddable library via <code>libghostty</code>.
-    <br />
-    <a href="#about">About</a>
-    ·
-    <a href="https://ghostty.org/download">Download</a>
-    ·
-    <a href="https://ghostty.org/docs">Documentation</a>
-    ·
-    <a href="CONTRIBUTING.md">Contributing</a>
-    ·
-    <a href="HACKING.md">Developing</a>
-  </p>
+  A macOS terminal for supervising several AI coding agents at once, forked from
+  <a href="https://github.com/ghostty-org/ghostty">Ghostty</a>.
+  <br />
+  <a href="#about-specterminal">About</a>
+  ·
+  <a href="NOTICE.md">Notice</a>
+  ·
+  <a href="CONTRIBUTING.md">Contributing</a>
+  ·
+  <a href="HACKING.md">Developing</a>
 </p>
 
-## About
+> [!NOTE]
+>
+> Specterminal is an independent fork. It is not made, endorsed or supported
+> by the Ghostty project or its maintainers. See [NOTICE.md](NOTICE.md) for
+> attribution and licence details.
+
+## About Specterminal
+
+Specterminal is for people who run Claude Code, Codex or similar coding agents
+in several git worktrees at once and want to see which of them need attention.
+It keeps Ghostty's terminal core and macOS app, and layers agent supervision on
+top in separate files so that merging upstream stays cheap.
+
+The planned work is tracked in this repository's issues. It centres on an open,
+terminal-agnostic agent-status escape sequence, a local control socket with a
+`specterminal ctl` command, and worktree-based agent workspaces. Ordinary
+terminal use (vim, ssh, tmux) is meant to behave exactly as it does in Ghostty.
+
+Specterminal is early. The app still uses Ghostty's bundle identifier, config
+directory and terminfo entry until the follow-up rename issues land, so it
+can't yet be installed alongside Ghostty.
+
+Everything below the line is Ghostty's own README, kept as upstream wrote it.
+
+---
+
+## About Ghostty (upstream)
 
 Ghostty is a terminal emulator that differentiates itself by being
 fast, feature-rich, and native. While there are many excellent terminal
