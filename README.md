@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="macos/Assets.xcassets/AppIconImage.imageset/macOS-AppIcon-512px.png" alt="The Specterminal icon: a mint specter with one teal and one amber eye on a teal retro monitor screen" width="128">
+</p>
+
 <h1 align="center">Specterminal</h1>
 
 <p align="center">
